@@ -1,0 +1,55 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding-left: 20px;
+ 
+
+    .left-side {
+      justify-content: center;
+    }
+    
+    .right-side {
+      justify-content: center;
+    
+    }
+
+  }
+
+  .navbar {
+    display: flex;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    height: 70px;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+    align-items: center;
+
+
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+      color: #2c91d0;
+  
+        &:hover {
+          cursor: pointer;
+          color: #fa8806;
+          text-decoration: none;
+        }
+    }
+  
+    .active {
+      border-bottom: 1px solid #fa8806;
+      color: #fa8806;
+    }
+  
+  }
+
+
+
+
+  

@@ -1,0 +1,33 @@
+.project-details-wrapper ¨{
+    display: grid;
+    grid-gap: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+     
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-detail-wrapper{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+    padding: 10px;
+}
+
+.project-detail-item {
+   display:flex;
+   justify-content: start;
+   align-items: center;
+   margin-top: 15px;
+
+}
+
+.btn-orange {
+    &:hover {
+        background-color: $btn-pink;
+      }
+  }

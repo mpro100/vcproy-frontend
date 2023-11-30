@@ -1,0 +1,15 @@
+.project-create-form {
+    @include input-element;
+    display: grid;
+    align-content: flex-start;
+    justify-content: space-between;
+    background-color: transparent;
+    color: $secondary-color;
+    text-decoration: none;
+    
+
+    .label {
+      margin-top: 5px;
+    }
+  
+  }

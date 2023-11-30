@@ -1,0 +1,200 @@
+html {
+  font-size: 62.5%; // 1rem is 10px
+  background-color: #fff;
+
+}
+
+*,
+*::after,
+*::before {
+  margin: 0em;
+  padding: 0em;
+  box-sizing: inherit;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.05em;
+  position: relative;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-weight: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
+  
+ 
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+
+  
+  // Estilos del enlace
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+
+h1 {
+    
+  font-family: 'Raleway', sans-serif;
+	font-weight:600;
+	font-size:35px;
+	line-height:50px;
+	color:$titulo;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+	font-weight:700;
+	font-size:45px;
+	line-height:50px;
+	color:#3b4052;
+	text-align:center;
+	margin:0px auto;
+	padding:30px;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #656b81;
+  text-align: center;
+  margin: 0px auto;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.titulo {
+	font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-transform: none;
+  font-size: 65px;
+  line-height: 65px;
+  color: $titulo;
+  text-align: center;
+  width: 1000px;
+  padding: 20px ;
+  margin: 20px auto 20px auto;
+  letter-spacing: -2px;
+}
+
+.subtitulo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: $subtitulo;
+  text-align: center;
+  text-transform: none;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.one-column {
+  @include base-grid();
+  grid-template-columns: 1fr;
+}
+
+.two-column {
+  @include base-grid();
+  grid-template-columns: 1fr 1fr;
+}
+  
+.message {
+  display: grid;
+  grid-template-columns: auto;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: $subtitulo;
+  text-align: center;
+  text-transform: none;
+  padding: 10px;
+  margin: 0 auto;
+  
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+
+}
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    
+    
+}
+.btn-orange {
+  @include base-btn();
+  background-color: #f38f1c;
+  padding: 15px;
+  margin: 5px;
+}
+
+.btn-pink {
+  @include base-btn();
+  background-color: $btn-pink;
+  padding: 15px;
+  margin: 5px;
+}
+
+.btn-blue {
+  @include base-btn();
+  background-color: $btn-blue;
+  padding: 15px;
+  margin: 5px;
+
+}
+
+.form-base {
+  @include input-element;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+           
+  padding: 0px 0px 0px 0px;
+  color: $secondary-color;
+  text-decoration: none;
+  
+}
+
+.title-list {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.label {
+  padding: 5px; ;
+}
+
+
+
+
+

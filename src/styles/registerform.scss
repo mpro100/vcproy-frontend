@@ -1,0 +1,14 @@
+.registerform {
+    @include input-element;
+    display: grid;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    
+    color: $secondary-color;
+    text-decoration: none;
+  
+  }
+
+ 
+

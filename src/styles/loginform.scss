@@ -1,0 +1,41 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+    
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: #fff;
+  
+  .logoG-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+}
+
+    .loginform-img-background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 94px;
+        width: 100%;
+    }
+
+}
+
+
+.loginform {
+  @include input-element;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+           
+  padding: 0px 0px 0px 0px;
+  color: $secondary-color;
+  text-decoration: none;
+
+  
+}
+
+
+
