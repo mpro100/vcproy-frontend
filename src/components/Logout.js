@@ -7,7 +7,7 @@ const Logout = ({ setLoggedIn }) => {
 
   useEffect(() => {
     // Realiza la solicitud de cierre de sesión
-    axios.get('http://localhost:5000/logout')
+    axios.post('http://localhost:5000/logout')
       .then(response => {
         if (response.data.message === 'Cierre de sesión exitoso') {
           setLoggedIn(false);
