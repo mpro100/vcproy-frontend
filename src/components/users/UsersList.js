@@ -21,7 +21,7 @@ export default function UserListPage() {
 
   useEffect(() => {
     // Obtener la lista de usuarios
-    axios.get('http://localhost:5000/userslist')
+    axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/userslist')
       .then(response => {
         setUsers(response.data);
       })
@@ -42,7 +42,7 @@ export default function UserListPage() {
     // Guardar los cambios editados en el usuario
     console.log('Guardando cambios editados:', editedUser);
     // Actualizar lista de usuarios
-    axios.get('http://localhost:5000/userslist')
+    axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/userslist')
       .then(response => {
         setUsers(response.data);
         setEditing(false);
@@ -64,7 +64,7 @@ export default function UserListPage() {
 
   const handleDelete = (userId) => {
     // Realizar una solicitud al servidor para eliminar el usuario con el ID proporcionado
-    axios.delete(`http://localhost:5000/users/${userId}`)
+    axios.delete(`https://vcproy-d66d8fc7ed40.herokuapp.com/users/${userId}`)
       .then(response => {
         // Actualizar la lista de usuarios después de la eliminación
         setUsers(users.filter(user => user.id !== userId));
@@ -94,7 +94,7 @@ export default function UserListPage() {
     setConfirmationMessage('Usuario registrado con éxito');
     setShowConfirmationModal(true);
     // Volver a cargar la lista de usuarios 
-        axios.get('http://localhost:5000/userslist')
+        axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/userslist')
         .then(response => {
           setUsers(response.data);
         })

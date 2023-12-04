@@ -17,7 +17,7 @@ export default function ProjectsList() {
 
   useEffect(() => {
     // Solicitud al servidor para obtener la lista de proyectos
-    axios.get('http://localhost:5000/projects')
+    axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/projects')
       .then(response => {
         setProjects(response.data);
       })
@@ -31,7 +31,7 @@ export default function ProjectsList() {
 
   const reloadProjectsList = () => {
     // Para recargar la lista de proyectos después de editar
-    axios.get('http://localhost:5000/projects')
+    axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/projects')
       .then(response => {
         setProjects(response.data);
         setConfirmationMessage('Proyecto editado y guardado correctamente');
@@ -62,7 +62,7 @@ export default function ProjectsList() {
 
   const handleDelete = (projectId) => {
     // Eliminación del proyecto
-    axios.delete(`http://localhost:5000/projects/${projectId}`)
+    axios.delete(`https://vcproy-d66d8fc7ed40.herokuapp.com/projects/${projectId}`)
       .then(response => {
         // Actualizar la lista de proyectos después de la eliminación
         setProjects(projects.filter(project => project.id !== projectId));
@@ -86,7 +86,7 @@ export default function ProjectsList() {
 
   const handleProjectCreateSuccess = () => {
     // Nueva solicitud para actualizar la lista de proyectos
-    axios.get('http://localhost:5000/projects')
+    axios.get('https://vcproy-d66d8fc7ed40.herokuapp.com/projects')
       .then(response => {
         setProjects(response.data);
         setCreating(false);

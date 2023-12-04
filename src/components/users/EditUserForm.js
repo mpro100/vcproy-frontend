@@ -20,7 +20,7 @@ const EditUserForm = ({ user, onSave, onCancel }) => {
   };
 
   const handleSave = () => {
-    axios.put(`http://localhost:5000/usersedit/${editedUser.id}`, editedUser)
+    axios.put(`https://vcproy-d66d8fc7ed40.herokuapp.com/usersedit/${editedUser.id}`, editedUser)
       .then(response => {
         onSave(editedUser);
       })

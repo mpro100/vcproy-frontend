@@ -24,7 +24,7 @@ export default function ProjectEditForm ({ project, onClose, onEditSuccess }) {
 
   const handleSave = () => {
     // Guardar los cambios en el proyecto
-    axios.put(`http://localhost:5000/projects/${project.id}`, editedProject)
+    axios.put(`https://vcproy-d66d8fc7ed40.herokuapp.com/projects/${project.id}`, editedProject)
       .then(response => {
         console.log(response.data);
         onEditSuccess(); // Llama a la función de éxito en ProjectDetails

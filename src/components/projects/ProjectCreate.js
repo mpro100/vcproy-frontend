@@ -34,7 +34,7 @@ const ProjectCreate = ({ onProjectCreateSuccess, onCancel }) => {
     }
 
     // Realizar la solicitud para crear un nuevo proyecto
-    axios.post('http://localhost:5000/project_new', {
+    axios.post('https://vcproy-d66d8fc7ed40.herokuapp.com/project_new', {
       proy_cod,
       proy_name,
       proy_description,

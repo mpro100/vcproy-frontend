@@ -7,7 +7,7 @@ const Logout = ({ setLoggedIn }) => {
 
   useEffect(() => {
     // Realiza la solicitud de cierre de sesión
-    axios.post('http://localhost:5000/logout')
+    axios.post('https://vcproy-d66d8fc7ed40.herokuapp.com/logout')
       .then(response => {
         if (response.data.message === 'Cierre de sesión exitoso') {
           setLoggedIn(false);

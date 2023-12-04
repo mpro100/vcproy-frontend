@@ -19,7 +19,7 @@ const RegisterForm = ({onCancel, onRegisterSuccess}) => {
       return;
     }
     // Realiza la solicitud de registro
-    axios.post('http://localhost:5000/register', { username, password })
+    axios.post('https://vcproy-d66d8fc7ed40.herokuapp.com/register', { username, password })
     .then(response => {
         setMessage(response.data.message);
         if (response.data.message === 'Usuario registrado con éxito') {
