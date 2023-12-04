@@ -15,10 +15,9 @@ export default function HomePage() {
             }}
           />
         </div>
-  
-        <div className='subtitulo'>Bienvenido a nuestra aplicación</div>
-        <div className='titulo'>Visualiza y crea Proyectos</div>
-        <div className='subtitulo'>Por favor, inicia sesión:</div>
+          <div className='subtitulo'>Bienvenido a nuestra aplicación</div>
+          <div className='titulo'>Visualiza y crea Proyectos</div>
+          <div className='subtitulo'>Por favor, inicia sesión:</div>
       
         <div>
           <Link to="/login">Iniciar Sesión</Link>

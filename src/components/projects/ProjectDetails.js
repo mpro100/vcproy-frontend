@@ -21,7 +21,7 @@ export default function ProjectDetails ({ project, onClose, onEdit, onDelete, re
      };
 
    return (
-    <div className="project-details-wrapper">
+   <div className="project-detail-wrapper">
       {isEditing ? (
         <ProjectEditForm
           project={project}
@@ -63,16 +63,17 @@ export default function ProjectDetails ({ project, onClose, onEdit, onDelete, re
                     <strong>Responsable del Proyecto: </strong> {project.manager}
                </div>
           </div>
-
-      <div className='btn-container'>
-       <button className='btn-blue' onClick={onClose}>Cerrar Detalles</button>
-        <button className='btn-blue' onClick={handleEditClick}>Editar Detalles</button>
-        <button className='btn-orange' onClick={handleDeleteClick}>Eliminar Proyecto</button>
-      </div>
-    </div>
-  )}
-</div>
- );
+          
+          <div className='btn-container'>
+               <button className='btn-blue' onClick={onClose}>Cerrar Detalles</button>
+               <button className='btn-blue' onClick={handleEditClick}>Editar Detalles</button>
+               <button className='btn-orange' onClick={handleDeleteClick}>Eliminar Proyecto</button>
+          </div>
+     </div>
+     )}
+     </div>
+);
+     
 }
 
 
